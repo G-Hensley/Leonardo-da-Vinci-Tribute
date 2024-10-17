@@ -108,6 +108,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    height: fit-content;
     margin: auto;
     margin-bottom: 1rem;
     margin-top: 4rem;
@@ -280,6 +281,7 @@ main {
     display: flex;
     height: 80px;
     justify-content: center;
+    min-width: 80px;
     padding: 0;
     width: 80px;
 }
@@ -301,4 +303,82 @@ hr {
     color: white;
     font-size: 1rem;
     margin: 2rem 0;
+}
+
+@media screen and (max-width: 1850px) {
+    #timeline-container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    #timeline-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #timeline-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #timeline-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #timeline-container {
+        gap: 2rem;
+    }
+
+    .main-line {
+        animation: none;
+        display: none;
+    }
+
+    #first-ll, #second-ll, #third-ll, #fourth-ll, #first-rl, #second-rl, #third-rl, #fourth-rl {
+        animation: none
+    }
+
+    #info-one, #info-two, #info-three, #info-four, #info-five, #info-six, #info-seven, #info-eight {
+        animation: none
+    }
+
+    .timeline-info {
+        padding: 0.2rem;
+        opacity: 1;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #timeline-container {
+        align-items: center;
+    }
+
+    .timeline-item {
+        border: 3px solid white;
+        flex-direction: row-reverse;
+        height: fit-content;
+        overflow: visible;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .reversed-item {
+        align-self: center;
+    }
+
+    .timeline-info {
+        border: 3px solid green;
+        height: min-content;
+        margin: auto;
+        max-height: none;
+        overflow: visible;
+        padding: 0;
+        width: auto;
+    }
 }
