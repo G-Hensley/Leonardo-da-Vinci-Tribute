@@ -1,0 +1,304 @@
+/* Global Variables */
+:root {
+    --alt-color: #543310;
+    --font-color: #F8F4E1;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+    --font-size: 0.8rem;
+    --highlight-color: #f7da7b;
+    --primary-color: #74512D;
+    --secondary-color: #AF8F6F;
+}
+
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body and Main Layout */
+body {
+    color: white;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    height: fit-content;
+    text-align: center;
+}
+
+main {
+    background-color: var(--primary-color);
+    margin: 0;
+    min-height: 100vh;
+}
+
+#intro-title {
+    padding-top: 6rem;
+}
+
+.page-title {
+    font-size: 4rem;
+}
+
+#tribute-info {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+
+/* Image Section */
+#img-div {
+    margin: 1rem 2rem;
+}
+
+#image {
+    animation: fade-in-img 4s ease forwards;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 8px 10px 15px -10px black;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    opacity: 0;
+}
+
+@keyframes fade-in-img {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button Styles */
+.btn {
+    background-color: var(--secondary-color);
+    border: 3px solid var(--font-color);
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    margin: 4rem 0;
+    padding: 0.5rem 0.5rem;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    box-shadow: 8px 10px 15px -8px black;
+    transform: scale(1.02);
+}
+
+/* Timeline Section */
+#timeline-section {
+    background-blend-mode:luminosity;
+    background-color: white;
+    background-image: url(Images/last-supper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    padding-top: 6rem;
+}
+
+#timeline-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    position: relative;
+    width: 45%;
+}
+
+/* Timeline frame and lines */
+.tl-frame-container {
+    align-items: center;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.main-line {
+    animation: grow-main-line 30s linear forwards;
+    animation-play-state: paused;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    height: 0%;
+    margin-bottom: 58px;
+    margin-top: 50px;
+    width: 0px;
+}
+
+@keyframes grow-main-line {
+    from {
+        border: 2px solid #f7da7b;
+        box-shadow: 0 0 10px 2px #f7da7b;
+    }
+    to {
+        border: 2px solid #f7da7b;
+        box-shadow: 0 0 10px 2px #f7da7b;
+        height: 100%;
+    }
+}
+
+/* Timeline Item Lines */
+#first-ll, #second-ll, #third-ll, #fourth-ll, #first-rl, #second-rl, #third-rl, #fourth-rl {
+    animation: grow-secondary-line 4s linear forwards;
+    animation-play-state: paused;
+}
+
+/* Line Animation Delays */
+#first-rl { animation-delay: 4s; }
+#second-ll { animation-delay: 7.5s; }
+#second-rl { animation-delay: 11.5s; }
+#third-ll { animation-delay: 15.3s; }
+#third-rl { animation-delay: 19s; }
+#fourth-ll { animation-delay: 22.8s; }
+#fourth-rl { animation-delay: 26.5s; }
+
+@keyframes grow-secondary-line {
+    from {
+        border: 2px solid #f7da7b;
+        box-shadow: 0 0 10px 2px #f7da7b;
+    }
+
+    to {
+        border: 2px solid #f7da7b;
+        box-shadow: 0 0 10px 2px #f7da7b;
+        width: 80%;
+    }
+}
+
+.secondary-lines-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15.7rem;
+    height: 100%;
+    left: 0;
+    margin-top: 50px;
+    position: absolute;
+    width: 50%;
+}
+
+.secondary-lines-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15.7rem;
+    height: 100%;
+    margin-top: 180px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+.left-line, .right-line {
+    animation-play-state: paused;
+    /* border: 2px solid #f7da7b;
+    box-shadow: 0 0 10px 2px #f7da7b; */
+    height: 0;
+    position: relative;
+    width: 0;
+}
+
+.left-line {
+    margin-left: auto;
+}
+
+/* Timeline Items to contain the date and the information */
+.timeline-item {
+    align-items: center;
+    background-color: var(--alt-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px #f7da7b;
+    display: flex;
+    gap: 1.1rem;
+    padding: 1rem;
+    padding-left: 0;
+    overflow: hidden;
+    width: fit-content;
+    z-index: 1;
+}
+
+/* Timeline information IDs that set up the animations */
+#info-one, #info-two, #info-three, #info-four, #info-five, #info-six, #info-seven, #info-eight {
+    animation: opacity-increase 8s linear forwards, item-expansion 0.5s ease forwards;
+    animation-play-state: paused;
+}
+
+/* Info Delays for Animation */
+#info-one { animation-delay: 3.7s; }
+#info-two { animation-delay: 7.7s; }
+#info-three { animation-delay: 11.2s; }
+#info-four { animation-delay: 15.2s; }
+#info-five { animation-delay: 19s; }
+#info-six { animation-delay: 22.7s; }
+#info-seven { animation-delay: 26.5s; }
+#info-eight { animation-delay: 30.2s; }
+
+@keyframes item-expansion {
+    to {
+        padding: 0.2rem;
+        width: 280px;
+    }
+}
+
+@keyframes opacity-increase {
+    to {
+        opacity: 1;
+    }
+}
+
+.reversed-item {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+.timeline-info {
+    font-size: 1rem;
+    opacity: 0;
+    text-align: center;
+    max-height: 80px;
+    width: 0;
+}
+
+/* Circles for the timeline items that contains the years */
+.timeline-circle {
+    align-items: center;
+    border: 3px solid var(--font-color);
+    border-radius: 50%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    padding: 0;
+    width: 80px;
+}
+
+.timeline-year {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+hr {
+    background-color: var(--font-color);
+    border: none;
+    height: 4px;
+    width: 30px;
+}
+
+/* For the copyright */
+#copyright {
+    color: white;
+    font-size: 1rem;
+    margin: 2rem 0;
+}

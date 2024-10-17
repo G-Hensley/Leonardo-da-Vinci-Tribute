@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A tribute to Leonardo da Vinci, highlighting key events of his life in a timeline format.">
+    <title>Leonardo da Vinci Tribute</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Content -->
+    <main id="main" role="main">
+        <header>
+            <h1 class="page-title" id="intro-title">Leonardo da Vinci</h1>
+            <h2 id="tribute-info">The most intelligent human in history</h2>
+        </header>
+
+        <figure id="img-div">
+            <!-- Alt text for accessibility -->
+            <img src="https://www.mos.org/leonardo/sites/mos.org.leonardo/files/uploads/da-vinci_0.jpg" id="image" alt="Painting of Leonardo da Vinci">
+            <figcaption id="img-caption">Painting of Leonardo da Vinci</figcaption>
+        </figure>
+
+        <!-- Accessible link and button -->
+        <a href="#timeline-section" class="page-link">
+            <button aria-label="View Timeline of Leonardo da Vinci" class="btn">View Timeline</button>
+        </a>
+    </main>
+
+    <!-- Timeline Section -->
+    <section id="timeline-section" aria-labelledby="timeline-title">
+        <h1 id="timeline-title" class="page-title">Timeline</h1>
+
+        <div id="timeline-container">
+            <!-- Main timeline structure with years and events -->
+            <div class="tl-frame-container">
+                <div class="main-line" aria-hidden="true"></div>
+                <div class="secondary-lines-left">
+                    <div id="first-ll" class="left-line" aria-hidden="true"></div>
+                    <div id="second-ll" class="left-line" aria-hidden="true"></div>
+                    <div id="third-ll" class="left-line" aria-hidden="true"></div>
+                    <div id="fourth-ll" class="left-line" aria-hidden="true"></div>
+                </div>
+                <div class="secondary-lines-right">
+                    <div id="first-rl" class="right-line" aria-hidden="true"></div>
+                    <div id="second-rl" class="right-line" aria-hidden="true"></div>
+                    <div id="third-rl" class="right-line" aria-hidden="true"></div>
+                    <div id="fourth-rl" class="right-line" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <!-- Timeline items -->
+            <div class="timeline-item">
+                <p id="info-one" class="timeline-info">April 15, 1452: Leonardo da Vinci is born in Vinci, Italy</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1452</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reversed-item">
+                <p id="info-two" class="timeline-info">1467: Leonardo moves to Florence and begins his apprenticeship with Andrea del Verrocchio, a leading artist and sculptor of the time.</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1467</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <p id="info-three" class="timeline-info">1472: Leonardo becomes a master in the Guild of Saint Luke, the guild of artists and doctors of medicine in Florence.</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1472</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reversed-item">
+                <p id="info-four" class="timeline-info">1482-1499: While in Milan, Leonardo works on various projects, including The Last Supper and multiple scientific sketches and inventions.</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1482</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <p id="info-five" class="timeline-info">1495-1498: Leonardo works on The Last Supper, one of his most famous paintings, located in the convent of Santa Maria delle Grazie in Milan.</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1495</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reversed-item">
+                <p id="info-six" class="timeline-info">1503-1506: Leonardo begins working on the Mona Lisa, which would become one of the most iconic portraits in history.</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1503</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <p id="info-seven" class="timeline-info">1513: Leonardo moves to Rome, where he works under the patronage of Pope Leo X. He focuses on scientific and anatomical studies during this time.</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1513</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reversed-item">
+                <p id="info-eight" class="timeline-info">May 2, 1519: Leonardo da Vinci dies in Amboise, France, at the age of 67.</p>
+                <div class="timeline-circle">
+                    <p class="timeline-year">1519</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Notice -->
+        <footer>
+            <p id="copyright">&copy; 2024 Gavin Hensley. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
