@@ -19,7 +19,7 @@ Installation
 
   Clone the repository:
 
-    git clone https://github.com/yourusername/Leonardo-da-Vinci-Tribute.git
+    git clone https://github.com/G-Hensley/Leonardo-da-Vinci-Tribute.git
 
   Navigate to the project directory:
 
