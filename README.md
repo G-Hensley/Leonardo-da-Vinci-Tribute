@@ -25,7 +25,7 @@ Installation
 
     cd leonardo-tribute
 
-    Open index.html in your preferred browser.
+  Open index.html in your preferred browser.
 
 Usage
 
