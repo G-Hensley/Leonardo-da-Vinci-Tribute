@@ -98,7 +98,7 @@ main {
 #timeline-section {
     background-blend-mode:luminosity;
     background-color: white;
-    background-image: url(Images/last-supper.jpg);
+    background-image: url(Images/last-supper.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
