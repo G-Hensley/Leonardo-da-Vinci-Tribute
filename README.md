@@ -19,11 +19,11 @@ Installation
 
   Clone the repository:
 
-    git clone https://github.com/yourusername/leonardo-tribute.git
+    git clone https://github.com/yourusername/Leonardo-da-Vinci-Tribute.git
 
   Navigate to the project directory:
 
-    cd leonardo-tribute
+    cd Leonardo-da-Vinci-Tribute
 
   Open index.html in your preferred browser.
 
